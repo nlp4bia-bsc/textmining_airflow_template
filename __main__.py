@@ -1,10 +1,10 @@
 import datetime
 from airflow import DAG
 from airflow.decorators import task
-from textmining_template.scripts.example import (
+from textmining_airflow_template.scripts.example import (
     example_function
 )
-from textmining_template.environment import env
+from textmining_airflow_template.environment import env
 
 AIRFLOW_PIPELINE_NAME = 'textmining_template'
 AIRFLOW_PIPELINE_DESCRIPTION = 'Template for Airflow Pipeline'
